@@ -120,7 +120,7 @@ class Game{
             { x: width / 2 + 250, y: height - 1800},
             { x: width / 2 - 180, y: height - 3300},
             { x: width / 2 - 150, y: height - 4300},
-            { x: width / 2, y: height - 5300 },
+            { x: width / 2,       y: height - 5300 },
             { x: width / 2 - 180, y: height - 5500}
         ];
         var obstacles2 = [
@@ -160,6 +160,7 @@ class Game{
         }
         if(player.fuel<=0){
             gameState = 2;
+            this.gameOver()
         }
     }
 
@@ -275,6 +276,20 @@ class Game{
             imageUrl:"https://media.tenor.com/sZAFBih2R54AAAAC/minions.gif",
             //o tamanho dela
             imageSize:'300x300',
+            //texto do botãozinho
+            confirmButtonText:"Ok"
+        })
+    }
+    gameOver(){
+        swal({
+            //titulo
+            title:"Que pena "+player.name+" 😥!" ,
+            //texto
+            text:"Você  perdeu todo o combustível",
+            //o endereço da imagem
+            imageUrl:"https://media.tenor.com/bAPQ2tejx6YAAAAd/crying-minions.gif",
+            //o tamanho dela
+            imageSize:'350x300',
             //texto do botãozinho
             confirmButtonText:"Ok"
         })
