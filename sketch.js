@@ -23,8 +23,6 @@ function preload() {
   fuelImg = loadImage("fuel.png");
 
   //carrega as imagens dos obstáculos...
-  obsImg1 = loadImage("pneus.png");
-  obsImg2 = loadImage("cones.png");
 
   //carregar a imagem de vida...
 
