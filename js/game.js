@@ -115,22 +115,7 @@ class Game{
         //adiciona as duas sprites na matriz cars
         cars = [car1, car2];
 
-        var obstacles1 = [
-            { x: width / 2 - 150, y: height - 1300},
-            { x: width / 2 + 250, y: height - 1800},
-            { x: width / 2 - 180, y: height - 3300},
-            { x: width / 2 - 150, y: height - 4300},
-            { x: width / 2,       y: height - 5300 },
-            { x: width / 2 - 180, y: height - 5500}
-        ];
-        var obstacles2 = [
-            { x: width / 2 + 250, y: height - 800},
-            { x: width / 2 - 180, y: height - 2300},
-            { x: width / 2, y: height - 2800},
-            { x: width / 2 + 180, y: height - 3300},
-            { x: width / 2 + 250, y: height - 3800},
-            { x: width / 2 + 250, y: height - 4800},
-        ];
+        
         fuels = new Group ();
         this.addSprites(fuels, fuelImg, 35,0.025 )
       
